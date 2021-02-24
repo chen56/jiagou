@@ -63,9 +63,10 @@
           </ExtensionPoint> -->
 
           <ExtensionPoint xsi:type="PrimaryCommandSurface">
-  <CustomTab id="TabCustom1">
-    <Group id="CommandsGroup">
-                <Label resid="CommandsGrdddoup.Label"/>
+            <CustomTab id="TabCustom1">
+
+              <Group id="CommandsGroup">
+                <Label resid="JiaGou.Group.Tree.Label"/>
                 <Icon>
                   <bt:Image size="16" resid="Icon.16x16"/>
                   <bt:Image size="32" resid="Icon.32x32"/>
@@ -88,11 +89,12 @@
                   </Action>
                 </Control>
               </Group>
-    <!-- <OfficeGroup id="Paragraph" /> -->
-    <Label resid="CommandsGroup.Label"/>
-    <!-- <InsertAfter>TabReview</InsertAfter> -->
-  </CustomTab>
-</ExtensionPoint>
+              <Label resid="JiaGou.Tab.Label"/>
+              <InsertAfter>TabHome</InsertAfter>
+              <!-- <OfficeGroup id="Paragraph" /> -->
+
+            </CustomTab>
+          </ExtensionPoint>
 
 
 
@@ -111,6 +113,9 @@
         <bt:Url id="Taskpane.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
       </bt:Urls>
       <bt:ShortStrings>
+
+        <bt:String id="JiaGou.Tab.Label" DefaultValue="架构图"/>
+        <bt:String id="JiaGou.Group.Tree.Label" DefaultValue="架构树"/>
         <bt:String id="GetStarted.Title" DefaultValue="Get started with your sample add-in!"/>
         <bt:String id="CommandsGroup.Label" DefaultValue="Commands Group"/>
         <bt:String id="TaskpaneButton.Label" DefaultValue="Show Taskpane"/>
